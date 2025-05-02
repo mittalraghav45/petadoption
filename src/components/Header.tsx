@@ -1,5 +1,5 @@
 import { Navbar, Container,Nav } from "react-bootstrap";
-
+import '../components/css/Header.css'
 export function Header() {
   return (
     <Navbar bg="primary" expand="lg" variant="dark">
