@@ -1,11 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import { Header } from './components/Header';
+import { PetList } from './services/PetLists';
 
 function App() {
   return (
-    <Header/>
+    <>
+    <Header/> 
+    <PetList/>
+    </>
   );
 }
 
