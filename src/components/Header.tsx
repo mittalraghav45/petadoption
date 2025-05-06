@@ -5,7 +5,7 @@ export function Header() {
     <Navbar bg="primary" expand="lg" variant="dark">
       <Container fluid>
         <Navbar.Brand href="/">
-          <img src="img/PetFinderLogo.png" width="80" height={80}></img>
+          <img src="/img/PetFinderLogo.png" width="80" height={80}></img>
         </Navbar.Brand>
         <Nav className='d-flex justify-conntent-center w-100'>
             <h1 className="text-center text-white">Help them find tgeir new hikes</h1>

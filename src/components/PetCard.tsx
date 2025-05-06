@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Pet } from "../models/Pet";
 import { Card } from "react-bootstrap";
 
@@ -24,8 +25,8 @@ export function PetCard(props: PetCardProps) {
             {props.pet.name} {props.pet.breed}
           </Card.Title>
           {props.pet.description}
-          <button className="btn btn-primary">Adopt Me</button>
-          <button className="btn btn-secondary">Details</button>
+          <button className="btn btn-primary">Adopt Me</button> 
+          <Link to={`/details/${props.pet.id}`} className="btn btn-secondary ml-2">Details</Link>
         </Card.Body>
       </Card>
     </>
