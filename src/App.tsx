@@ -1,14 +1,24 @@
-
-import './App.css';
-import { Header } from './components/Header';
-import { PetList } from './services/PetLists';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import { Header } from "./components/Header";
+import { PetList } from "./services/PetLists";
+import { PetDetails } from "./components/PetDetails";
 
 function App() {
   return (
-    <>
-    <Header/> 
-    <PetList/>
-    </>
+    // <>
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<PetList />}></Route>
+          <Route path="/details/:id" element={<PetDetails />}>
+            
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+    // </>
   );
 }
 
